@@ -1,0 +1,21 @@
+
+
+@import 'variables';
+@import 'partials/header';
+@import 'partials/github';
+
+
+
+//Bootstrap
+.container {
+  max-width:800px;
+}
+html, body { 
+  color:$primary-color;
+  background-color: $bg-color;
+}
+
+
+
+
+

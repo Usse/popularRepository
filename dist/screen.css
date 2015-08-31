@@ -1,0 +1,25 @@
+header {
+  margin-bottom: 1em;
+  background-color: #87a655; }
+  header h1 {
+    margin: .5em 0;
+    font-size: 2em; }
+
+.github--item {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  cursor: pointer; }
+
+.github--stat {
+  float: left;
+  width: 33%;
+  text-align: left; }
+  .github--stat span {
+    margin-left: 5px; }
+
+.container {
+  max-width: 800px; }
+
+html, body {
+  color: #333;
+  background-color: #f3f3ed; }
