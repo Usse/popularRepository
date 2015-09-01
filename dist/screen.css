@@ -8,7 +8,17 @@ header {
 .github--item {
   padding: 8px 0;
   border-bottom: 1px solid #eee;
-  cursor: pointer; }
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  .github--item.isOpen {
+    background: #F9F9F9; }
+    .github--item.isOpen .github--details {
+      display: block; }
 
 .github--stat {
   float: left;
@@ -16,6 +26,13 @@ header {
   text-align: left; }
   .github--stat span {
     margin-left: 5px; }
+
+.github--details {
+  display: none;
+  float: left;
+  width: 100%;
+  margin-top: 10px;
+  padding: 2%; }
 
 .container {
   max-width: 800px; }

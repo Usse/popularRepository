@@ -17,7 +17,7 @@ class GithubViewer extends React.Component {
     var URL = 'repos.json';
     $.get(URL, function(data) {
       this.setState({
-        repositories : _.sortBy(data, 'stargazers_count').reverse()
+        repositories : _.sortBy(data, 'stargazers_count').reverse().slice(0, 20)
       });
     }.bind(this));
   }
@@ -32,7 +32,9 @@ class GithubViewer extends React.Component {
             name = {repo.name}
             stargazers_count = {repo.stargazers_count} 
             watchers_count = {repo.watchers_count}
-            forks = {repo.forks} />
+            forks = {repo.forks} 
+            description = {repo.description}
+            html_url = {repo.html_url} />
         );
       });
     }
@@ -44,15 +46,6 @@ class GithubViewer extends React.Component {
             </div>;
   }
 }
-
-
-// GithubViewer.propTypes = {
-//   username: React.PropTypes.string.isRequired
-// }
-
-// GithubViewer.defaultProps = {
-//   username : 'no-username'
-// }
 
 export default GithubViewer;
 

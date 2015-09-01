@@ -3,6 +3,22 @@
   padding:8px 0;
   border-bottom:1px solid #eee;
   cursor: pointer;
+
+  //disable cursor highlight  
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+
+  &.isOpen {
+    background:#F9F9F9;
+    .github--details {
+      display: block;
+    }
+  }
 }
 
 .github--stat {
@@ -10,4 +26,14 @@
   width:33%;
   text-align:left;
   span {margin-left:5px;}
+}
+
+
+.github--details {
+  display: none;
+  float:left;
+  width:100%;
+  margin-top:10px;
+  padding:2%;
+  
 }
